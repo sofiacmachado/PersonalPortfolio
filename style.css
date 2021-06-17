@@ -1,0 +1,51 @@
+/* == Header / Navbar == */
+
+.portfolioName {
+  font-size: 18px;
+  color: palevioletred;
+  display: inline-block;
+  position: relative;
+}
+.portfolioName:hover {
+  color: palevioletred
+}
+.portfolioName:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: palevioletred;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.portfolioName:hover:after,
+.portfolioName:focus:after,
+.portfolioName:active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbarMenu a {
+  display: block;
+  position: relative;
+  color:black;
+  padding: 10px 15px;
+  transition: 0.2s;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbarMenu a:hover, .navbarMenu .active > a, .navbarMenu li:hover > a {
+  color: palevioletred;
+  text-decoration: none;
+}
+
+.dropdownMenu {
+  font-size: 10px !important;
+}
