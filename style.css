@@ -1,10 +1,34 @@
-/* == Header / Navbar == */
+/* == Header == */
+
+.mainPage {
+  z-index: 997;
+  transition: all 0.5s;
+  height: 80px;
+  background: rgba(25, 28, 31, 0.8);
+}
+
+.mainPage.header-transparent {
+  background: transparent;
+}
+
+.mainPage.header-scrolled {
+  height: 60px;
+  background: rgba(25, 28, 31, 0.8);
+}
+
+
+/* == Navbar == */
+
 
 .portfolioName {
   font-size: 18px;
   color: palevioletred;
-  display: inline-block;
+  display: inline;
   position: relative;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .portfolioName:hover {
   color: palevioletred
@@ -32,10 +56,10 @@
 .navbarMenu a {
   display: block;
   position: relative;
-  color:black;
-  padding: 10px 15px;
+  color:whitesmoke;
+  padding: 30px 15px;
   transition: 0.2s;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -48,4 +72,54 @@
 
 .dropdownMenu {
   font-size: 10px !important;
+  color: black !important;
+  padding: 10px !important;
 }
+.dropdownMenu:hover{
+  color: palevioletred !important;
+  text-decoration: none;
+}
+
+/* == Hero Section == */
+
+.intro {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+
+.intro .intro-content {
+  text-align: center;
+  position:relative;
+}
+
+
+.intro-subtitle {
+  font-size: 35px;
+  font-weight: 300;
+  padding-top: 200px;
+  font-family: "Satisfy", serif;
+  color:blanchedalmond;
+}
+
+@media (min-width: 768px) {
+  .intro .intro-subtitle {
+    font-size: 70px;
+  }
+}
+
+.intro .text-slider-items {
+  display: none;
+}
+
+.intro-single {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .intro-single {
+    font-size: 3.5rem;
+  }
+}
+
