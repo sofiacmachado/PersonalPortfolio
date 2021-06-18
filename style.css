@@ -25,6 +25,21 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.title-a {
+  font-size: 24px;
+  color: rgb(167, 177, 110);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+p li {
+  color: #1e1e1e;
+  font-family:  "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+}
+
 .p-r {
   position: relative;
 }
@@ -180,7 +195,7 @@ a:hover {
 
 .dropdownMenu {
   font-size: 10px !important;
-  color: black !important;
+  color:  #1e1e1e !important;
   padding: 10px !important;
 }
 .dropdownMenu:hover{
@@ -191,7 +206,7 @@ a:hover {
 
 .navbar {
   transition: all .5s ease-in-out;
-  background-color: rgba(17, 16, 14, 0.226);
+  background-color:  #1e1e1e;
 }
 
 
@@ -243,17 +258,10 @@ a:hover {
 
 /* == About Section == */
 
-.about-me h5 {
-  font-size: 16px;
-  color: rgb(167, 177, 110);
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
 .lead {
   padding-top: 10px;
   font-size: 18px;
-  color: rgb(29, 29, 29);
+  color: #1e1e1e;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
@@ -263,6 +271,13 @@ a:hover {
   color: rgb(75, 110, 87);
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  letter-spacing: 1px;
+}
+.skills {
+  font-size: 12px;
+  color: #1e1e1e;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -306,3 +321,27 @@ a:hover {
 }
 
 
+/* === Resume Section === */
+
+.resume-title {
+  font-size: 18px;
+  color: rgb(75, 110, 87);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.resume .resume-item .resume-date {
+  font-size: 16px;
+  background: #eef0f2;
+  font-family: "Raleway", sans-serif;
+  color: rgb(75, 110, 87);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item li {
+  font-style: italic;
+}
