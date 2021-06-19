@@ -45,17 +45,18 @@
                 </li>
                 <li class='nav-item dropdown'>
                   <a id='navbarDropdown' class='nav-link js-scroll dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                    <span>Contact</span><i class='fas fa-chevron-down'></i>
+                    <span>Services</span><i class='fas fa-chevron-down'></i>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdownMenu dropdown-item" href="instagram">Instagram</a>
-                    <a class="dropdownMenu dropdown-item" href="facebook">Facebook</a>
-                    <a class="dropdownMenu dropdown-item" href="linkedIn">LinkedIn</a>
-                    <a class="dropdownMenu dropdown-item" href="github">Github</a>
+                    <a class="dropdownMenu dropdown-item" href="facebook">Photography</a>
+                    <a class="dropdownMenu dropdown-item" href="linkedIn">Video Editing</a>
+                    <a class="dropdownMenu dropdown-item" href="github">Web Development</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdownMenu dropdown-item" href="email">Email</a>
-                    <a class="dropdownMenu dropdown-item" href="cellphone">Cellphone</a>
+                    <a class="dropdownMenu dropdown-item" href="email">Bookselling</a>
                   </div>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link js-scroll' href='portfolio'>Contact</a>
                 </li>
              </ul>
            </div>
@@ -160,14 +161,14 @@
           </section>
 
     <!-- ==== Resume Section ==== -->
-    <section class='resume'>
+    <section id='resume' class='resume'>
       <div class='container '>
         
         <div class='title-a mb-4 '>
           <span>Resume</span>
         </div>
 
-        <div class='row mx-5'>
+        <div class='row mx-5 mb-5'>
           <div class='col-lg-6'>
             <h3 class='resume-title mb-4'>Education</h3>
             <div class='resume-item mb-4'>
@@ -226,11 +227,11 @@
     </section>
 
     <!-- === Services Section === -->
-    <section class='services'>
+    <section id='services' class='services'>
       <div class='container'>
         <div class='title-a mb-4'>Services</div>
 
-        <div class='row'>
+        <div class='row mb-5'>
           <div class='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'>
             <div class='icon-box'>
               <div class='icon'><i class='fas fa-book-reader'></i></div>
@@ -262,7 +263,106 @@
       </div>
 
 
-      
+      <!-- === Portfolio Section === -->
+      <section id='portfolio' class='portfolio'>
+        <div class='container'>
+
+          <div class='section-title'>
+            <span class='title-a'>Portfolio</span>
+          </div>
+
+          <ul id='portfolio-filters' class='d-flex justify-content-center'>
+            <li data-filter='*' class='filter-active'>All</li>
+            <li data-filter=".filter-photo">Photo</li>
+            <li data-filter=".filter-video">Video </li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+
+          <div class='row container'>
+            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-photo'>
+              <div class='col-6 col-md-12 portfolio-img'><img src='./assets/images/photo1.jpg' class='img-fluid' alt='photography work'></div>
+              <div class='work-content'>
+                <div class='row'>
+                  <div class='col-6 col-md-12'>
+                    <h4 class='title-s'>Photography Work 1</h4>
+                    <div class='work-info'>
+                      <span class='work-category'>Photography</span> - <span class='work-date'>20 March 2018</span>
+                    </div>
+                    <div class='work-more'>
+                      <a href='#'><i class='fas fa-plus-square'></span></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-video'>
+              <div class='col-6 col-md-12 portfolio-img'><img src='./assets/images/video1.jpg' class='img-fluid' alt='video work'></div>
+              <div class='work-content'>
+                <div class='row'>
+                  <div class='col-6 col-md-12'>
+                    <h4 class='title-s'>Video Editing Work 1</h4>
+                    <div class='work-info'>
+                      <span class='work-category'>Video</span> - <span class='work-date'>20 March 2019</span>
+                    </div>
+                    <div class='work-more'>
+                      <a href='#'><i class='fas fa-plus-square'></span></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-photo'>
+              <div class='col-6 col-md-12  portfolio-img'><img src='./assets/images/photo2.jpg' class='img-fluid' alt='photography work'></div>
+              <div class='work-content'>
+                <div class='row'>
+                  <div class='col-6 col-md-12'>
+                    <h4 class='title-s'>Photography Work 2</h4>
+                    <div class='work-info'>
+                      <span class='work-category'>Photography</span> - <span class='work-date'>31 May 2018</span>
+                    </div>
+                  </div>
+                  <div class='work-more'>
+                      <a href='#'><i class='fas fa-plus-square'></span></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-web'>
+              <div class='portfolio-img'><img src='./assets/images/web1.jpg' class='img-fluid' alt='photography work'></div>
+              <div class='work-content'>
+                <div class='row'>
+                  <div class='col-6 col-md-12'>
+                    <h4 class='title-s'>Web Development</h4>
+                    <div class='work-info'>
+                      <span class='work-category'>Web</span> - <span class='work-date'>20 June 2021</span>
+                    </div>
+                  </div>
+                  <div class='work-more'>
+                      <a href='#'><i class='fas fa-plus-square'></span></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-video'>
+              <div class='portfolio-img'><img src='./assets/images/video2.jpg' class='img-fluid' alt='photography work'></div>
+              <div class='work-content'>
+                <div class='row'>
+                  <div class='col-6 col-md-12'>
+                    <h4 class='title-s'>Video Editing Work 1</h4>
+                    <div class='work-info'>
+                      <span class='work-category'>Video Edit</span> - <span class='work-date'>20 March 2018</span>
+                    </div>
+                  </div>
+                  <div class='work-more'>
+                      <a href='#'><i class='fas fa-plus-square'></span></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </section>
