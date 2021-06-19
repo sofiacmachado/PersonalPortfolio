@@ -288,7 +288,8 @@ p li {
   margin-top: 3rem;
   margin-bottom: 3rem;
   z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  border-radius: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -332,7 +333,7 @@ p li {
 }
 
 .resume .resume-item .resume-date {
-  font-size: 16px;
+  font-size: 14px;
   background: #eef0f2;
   font-family: "Raleway", sans-serif;
   color: rgb(75, 110, 87);
@@ -344,4 +345,61 @@ p li {
 
 .resume .resume-item li {
   font-style: italic;
+}
+
+/* === Services Section === */
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  border-radius: 1rem;
+}
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 235, 205, 0.247);
+}
+
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: palevioletred;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+  transition: 0.3s;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: palevioletred;
+}
+
+.services .icon-box:hover .title-s a {
+  color: palevioletred;
 }
