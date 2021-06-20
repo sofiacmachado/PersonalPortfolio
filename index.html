@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel ="stylesheet" type="text/css" href="./style.css">
+    
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
@@ -261,7 +262,7 @@
           </div>
         </div>
       </div>
-
+    </section>
 
       <!-- === Portfolio Section === -->
       <section id='portfolio' class='portfolio'>
@@ -308,7 +309,6 @@
                       <a href='#'><i class='fas fa-plus-square'></span></i>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -364,11 +364,145 @@
         </div>
       </section>
 
+      <!-- === Testimonials Section === -->
 
+    <section id='testimonials'>
+      <div class='container-fluid'>
+         <div class='testimonials carousel slide' data-ride='carousel'>
+           <ol class='carousel-indicators'>
+             <li data-target='#testimonials' data-slide-to='0' class='active'></li>
+             <li data-target='#testimonials' data-slide-to='1'></li>
+             <li data-target='#testimonials' data-slide-to='2'></li>
+           </ol>
+
+           <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                  <img class='testimonial-img' src='./assets/images/testimonials1.jpg' alt='testimonial face'>
+                  <h3>Mark Bansky</h3>
+                  <h4>Restaurant Owner</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+                <div class='carousel-item'>
+                  <img class='testimonial-img' src='./assets/images/testimonials2.jpg' alt='testimonial face'>
+                  <h3>Anna Klimt</h3>
+                  <h4>Designer</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+             
+                <div class='carousel-item'>
+                  <img class='testimonial-img' src='./assets/images/testimonials3.jpg' alt='testimonial face'>
+                  <h3>Phoebe Dali</h3>
+                  <h4>Freelancer</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+          </div>
+
+                <a class='carousel-control-prev' href='#testimonials' role='button' data-slide='prev'>
+                  <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <a class='carousel-control-next' href='#testimonials' role='button' data-slide='next'>
+                  <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                  <span class="sr-only">Next</span>
+                </a>
+          </div>
+       </div>
+    </section>
+
+    <!-- === Contact Section === -->
+
+    <section id='contact' class='contact'>
+      <div class='container'>
+
+        <div class='section-title mb-2 mt-5'>
+          <span class='title-a'>Contact Me</span>
+        </div>
+        <div class='row'>
+          <div class='col-lg-6'>
+
+            <div class='row'>
+              <div class='col-md-12'>
+                <div class='info-box'>
+                  <i class='fas fa-share-alt'></i>
+                  <h3>Social Profiles</h3>
+                  <a href='#' class='facebook'><i class='fab fa-facebook-f'></i></a>
+                  <a href='#' class='instagram'><i class='fab fa-instagram'></i></a>
+                  <a href='#' class='github'><i class='fab fa-github'></i></a>
+                  <a href='#' class='linkedin'><i class='fab fa-linked-in'></i></a>
+                </div>
+              </div>
+            </div>
+            <div class='col-md-6'>
+              <div class='info-box mt-4'>
+                <i class='far fa-envelope-open'></i>
+                <h3>Email Me</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+            <div class='col-md-6'>
+              <div class='info-box mt-4'>
+                <i class='fas fa-phone-alt'></i>
+                <h3>Call Me</h3>
+                <p>+351 *** *** ***</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-lg-6'>
+          <form action='forms/contact.php' method='post' role='form' class='php-email-form'>
+            <div class='form-row'>
+              <div class='col-md-6 form-group'>
+                <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars'>
+                <div class='validate'></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="6" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
     </section>
 
     </main>
     
+    <!-- === Footer === -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Sofia Carneiro Machado</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
