@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel ="stylesheet" type="text/css" href="./style.css">
+  
     
 
     <!-- Font Awesome -->
@@ -28,40 +29,76 @@
     <!-- ===== Header / Navbar ===== -->
     <header id='topPage'>  
         <div class='container '>
-      <nav class='mainNav navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
+      <nav id='navbar' class='mainNav navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
         <div class='container'>
-          <a class='portfolioName navbar-brand js-scroll' href='#topPage' id='portfolioName'>Sofia Carneiro Machado</a>
+          <a class='portfolioName navbar-brand active' href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
           <button class='navbar-toggler collapsed' type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
           </button>
           <div id='navbarMenu' class='navbarMenu navbar-collapse collapse justify-content-end'>
              <ul class='navbar-nav'>
                 <li class='nav-item'>
-                  <a class='nav-link js-scroll' href='about'>About</a>
+                  <a class='nav-link' href='#about'>About</a>
                 </li>
                 <li class='nav-item'>
-                  <a class='nav-link js-scroll' href='resume'>Resume</a>
+                  <a class='nav-link' href='#resume'>Resume</a>
                 </li>
                 <li class='nav-item'>
-                  <a class='nav-link js-scroll' href='portfolio'>Portfolio</a>
+                  <a class='nav-link' href='#portfolio'>Portfolio</a>
                 </li>
                 <li class='nav-item dropdown'>
-                  <a id='navbarDropdown' class='nav-link js-scroll dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                  <a id='navbarDropdown' class='nav-link dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
                     <span>Services</span><i class='fas fa-chevron-down'></i>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdownMenu dropdown-item" href="facebook">Photography</a>
-                    <a class="dropdownMenu dropdown-item" href="linkedIn">Video Editing</a>
-                    <a class="dropdownMenu dropdown-item" href="github">Web Development</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Photography</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Video Editing</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Web Development</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdownMenu dropdown-item" href="email">Bookselling</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Bookselling</a>
                   </div>
                 </li>
                 <li class='nav-item'>
-                  <a class='nav-link js-scroll' href='portfolio'>Contact</a>
+                  <a class='nav-link' href='#contact'>Contact</a>
                 </li>
              </ul>
            </div>
         </div>
+
+        <!-- Dropdown Menu -->
+
+        <button class='navbar-toggler navbar-brand py-0 pr-0 pl-0 border-0 position-relative collapsed ' role='button' data-toggle='collapse' data-target='#collapseMenu' aria-controls='collapseMenu' aria-expanded='false' aria-label='Toggle navigation'>
+          <i id='navbarIcon' class="fas fa-align-justify"></i>
+        </button>
+        <div class='collapse navbar-collapse pb-6 font-weight-light bg-white position-relative' id ='collapseMenu'>
+          <form class= >
+            <div class ='form-group mb-4'>
+
+              <ul class='navbar-nav pt-4'>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#about'>About</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#resume'>Resume</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#portfolio'>Portfolio</a>
+                </li>
+                <label for="exampleFormControlSelect1"></label>
+              <select class="form-control mb-2" id="langDropdown">
+                <option>Photography</option>
+                <option>Video Editing</option>
+                <option>Web Development</option>
+                <option>Bookselling</option>
+              </select>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#contact'>Contact</a>
+                </li>
+              </ul></div>
+            </div>
+          </form>
+        </div>
+              
+
       </nav>
     </header>
 
@@ -141,9 +178,9 @@
                   <div class='col-md-6'>
                     <div class='about-me pt-4 pt-md-0'>
                       <div class='title-box-2'>
-                        <h5 class='title-a'>
+                        <h2 class='title-a'>
                           About me
-                        </h5>
+                        </h2>
                       </div>
                       <p class='lead'>
                         I'm Sofia Machado, born in 1992 I grew up in Braga.
@@ -265,110 +302,92 @@
     </section>
 
       <!-- === Portfolio Section === -->
+
       <section id='portfolio' class='portfolio'>
         <div class='container'>
+          <span class='title-a mb-4'>Portfolio</span>
 
-          <div class='section-title'>
-            <span class='title-a'>Portfolio</span>
-          </div>
-
-          <ul id='portfolio-filters' class='d-flex justify-content-center'>
-            <li data-filter='*' class='filter-active'>All</li>
-            <li data-filter=".filter-photo">Photo</li>
-            <li data-filter=".filter-video">Video </li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-
-          <div class='row container'>
-            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-photo'>
-              <div class='col-6 col-md-12 portfolio-img'><img src='./assets/images/photo1.jpg' class='img-fluid' alt='photography work'></div>
-              <div class='work-content'>
-                <div class='row'>
-                  <div class='col-6 col-md-12'>
-                    <h4 class='title-s'>Photography Work 1</h4>
-                    <div class='work-info'>
-                      <span class='work-category'>Photography</span> - <span class='work-date'>20 March 2018</span>
-                    </div>
-                    <div class='work-more'>
-                      <a href='#'><i class='fas fa-plus-square'></span></i>
-                    </div>
+          <div class='row'>
+            <article class='col-12 col-md-4 col-lg-3 mb-3'>
+              <div class='row'>
+                <div class='col-6 col-md-12'>
+                  <img class='img-fluid aspectRatioBox rounded' src='./assets/images/photo1.jpg'>
+                </div>
+                <div class='col-6 col-md-12'>
+                  <h4 class='title-s'>Photography Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Photography</a><em> - 20 March 2018</em></h4>
+                  <div class='portfolioPlus'>
+                    <a href='#'><i class='fas fa-plus-square'></span></i></a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-video'>
-              <div class='col-6 col-md-12 portfolio-img'><img src='./assets/images/video1.jpg' class='img-fluid' alt='video work'></div>
-              <div class='work-content'>
-                <div class='row'>
-                  <div class='col-6 col-md-12'>
-                    <h4 class='title-s'>Video Editing Work 1</h4>
-                    <div class='work-info'>
-                      <span class='work-category'>Video</span> - <span class='work-date'>20 March 2019</span>
-                    </div>
-                    <div class='work-more'>
-                      <a href='#'><i class='fas fa-plus-square'></span></i>
-                    </div>
+            </article>
+            <article class='col-12 col-md-4 col-lg-3 mb-3'>
+              <div class='row'>
+                <div class='col-6 col-md-12'>
+                  <img class='img-fluid aspectRatioBox rounded' src='./assets/images/video1.jpg'>
+                </div>
+                <div class='col-6 col-md-12'>
+                  <h4 class='title-s'>Video Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Video Edit</a><em> - 20 March 2019</em></h4>
+                  <div class='portfolioPlus'>
+                    <a href='#'><i class='fas fa-plus-square'></span></i></a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-photo'>
-              <div class='col-6 col-md-12  portfolio-img'><img src='./assets/images/photo2.jpg' class='img-fluid' alt='photography work'></div>
-              <div class='work-content'>
-                <div class='row'>
-                  <div class='col-6 col-md-12'>
-                    <h4 class='title-s'>Photography Work 2</h4>
-                    <div class='work-info'>
-                      <span class='work-category'>Photography</span> - <span class='work-date'>31 May 2018</span>
-                    </div>
+            </article>
+            <article class='col-12 col-md-4 col-lg-3 mb-3'>
+              <div class='row'>
+                <div class='col-6 col-md-12'>
+                  <img class='img-fluid aspectRatioBox rounded' src='./assets/images/photo2.jpg'>
+                </div>
+                <div class='col-6 col-md-12'>
+                  <h4 class='title-s'>Photography Work 2</h4>
+                  <h4 class='title-s'><a href='#'>Photography</a><em> - 31 May 2018</em></h4>
+                  <div class='portfolioPlus'>
+                    <a href='#'><i class='fas fa-plus-square'></span></i></a>
                   </div>
-                  <div class='work-more'>
-                      <a href='#'><i class='fas fa-plus-square'></span></i>
-                    </div>
                 </div>
               </div>
-            </div>
-            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-web'>
-              <div class='portfolio-img'><img src='./assets/images/web1.jpg' class='img-fluid' alt='photography work'></div>
-              <div class='work-content'>
-                <div class='row'>
-                  <div class='col-6 col-md-12'>
-                    <h4 class='title-s'>Web Development</h4>
-                    <div class='work-info'>
-                      <span class='work-category'>Web</span> - <span class='work-date'>20 June 2021</span>
-                    </div>
+            </article>
+            <article class='col-12 col-md-4 col-lg-3 mb-3'>
+              <div class='row'>
+                <div class='col-6 col-md-12'>
+                  <img class='img-fluid aspectRatioBox rounded' src='./assets/images/web1.jpg'>
+                </div>
+                <div class='col-6 col-md-12'>
+                  <h4 class='title-s'>Web Development Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Web</a><em> - 20 June 2021</em></h4>
+                  <div class='portfolioPlus'>
+                    <a href='#'><i class='fas fa-plus-square'></span></i></a>
                   </div>
-                  <div class='work-more'>
-                      <a href='#'><i class='fas fa-plus-square'></span></i>
-                    </div>
                 </div>
               </div>
-            </div>
-            <div class='col-12 col-md-4 col-lg-3 portfolio-item filter-video'>
-              <div class='portfolio-img'><img src='./assets/images/video2.jpg' class='img-fluid' alt='photography work'></div>
-              <div class='work-content'>
-                <div class='row'>
-                  <div class='col-6 col-md-12'>
-                    <h4 class='title-s'>Video Editing Work 1</h4>
-                    <div class='work-info'>
-                      <span class='work-category'>Video Edit</span> - <span class='work-date'>20 March 2018</span>
-                    </div>
+            </article>
+            <article class='col-12 col-md-4 col-lg-3 mb-3'>
+              <div class='row'>
+                <div class='col-6 col-md-12'>
+                  <img class='img-fluid aspectRatioBox rounded' src='./assets/images/web1.jpg'>
+                </div>
+                <div class='col-6 col-md-12'>
+                  <h4 class='title-s'>Video Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Video Edit</a><em> - 20 March 2018</em></h4>
+                  <div class='portfolioPlus'>
+                    <a href='#'><i class='fas fa-plus-square'></span></i></a>
                   </div>
-                  <div class='work-more'>
-                      <a href='#'><i class='fas fa-plus-square'></span></i>
-                    </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
+       
       <!-- === Testimonials Section === -->
 
     <section id='testimonials'>
-      <div class='container-fluid'>
-         <div class='testimonials carousel slide' data-ride='carousel'>
+      <div class='container-fluid mt-5'>
+         <div id='testimonials' class='testimonials carousel slide' data-ride='carousel'>
            <ol class='carousel-indicators'>
              <li data-target='#testimonials' data-slide-to='0' class='active'></li>
              <li data-target='#testimonials' data-slide-to='1'></li>
@@ -402,23 +421,14 @@
                     <i class='fas fa-quote-left'></i></p>
                 </div>
           </div>
-
-                <a class='carousel-control-prev' href='#testimonials' role='button' data-slide='prev'>
-                  <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
-                  <span class="sr-only">Next</span>
-                </a>
-                <a class='carousel-control-next' href='#testimonials' role='button' data-slide='next'>
-                  <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
-                  <span class="sr-only">Next</span>
-                </a>
-          </div>
+        </div>
        </div>
     </section>
 
     <!-- === Contact Section === -->
 
-    <section id='contact' class='contact'>
-      <div class='container'>
+    <section id='contact' id= 'contact' class='contact'>
+      <div class='container mb-5'>
 
         <div class='section-title mb-2 mt-5'>
           <span class='title-a'>Contact Me</span>
@@ -427,64 +437,69 @@
           <div class='col-lg-6'>
 
             <div class='row'>
+
               <div class='col-md-12'>
                 <div class='info-box'>
                   <i class='fas fa-share-alt'></i>
                   <h3>Social Profiles</h3>
-                  <a href='#' class='facebook'><i class='fab fa-facebook-f'></i></a>
-                  <a href='#' class='instagram'><i class='fab fa-instagram'></i></a>
-                  <a href='#' class='github'><i class='fab fa-github'></i></a>
-                  <a href='#' class='linkedin'><i class='fab fa-linked-in'></i></a>
+                  <div class='social-links'>
+                    <a href='#' class='facebook'><i class='fab fa-facebook-f'></i></a>
+                    <a href='#' class='instagram'><i class='fab fa-instagram'></i></a>
+                    <a href='https://github.com/sofiacmachado' target='_blank' class='github'><i class='fab fa-github'></i></a>
+                    <a href='#https://www.linkedin.com/in/sofiacarneiromachado/' target='_blank' class='linkedin'><i class='fab fa-linkedin-in'></i></a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class='col-md-6'>
+                <div class='info-box mt-4'>
+                  <i class='far fa-envelope-open'></i>
+                  <h3>Email Me</h3>
+                  <p>contact@example.com</p>
+                </div>
+              </div>
+
+              <div class='col-md-6'>
+                <div class='info-box mt-4'>
+                  <i class='fas fa-phone-alt'></i>
+                  <h3>Call Me</h3>
+                  <p>+351 *** *** ***</p>
                 </div>
               </div>
             </div>
-            <div class='col-md-6'>
-              <div class='info-box mt-4'>
-                <i class='far fa-envelope-open'></i>
-                <h3>Email Me</h3>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-            <div class='col-md-6'>
-              <div class='info-box mt-4'>
-                <i class='fas fa-phone-alt'></i>
-                <h3>Call Me</h3>
-                <p>+351 *** *** ***</p>
-              </div>
-            </div>
+
+          </div>
+
+          <div class='col-lg-6'>
+              <form action='forms/contact.php' method='post' role='form' class='php-email-form'>
+                <div class='form-row'>
+                  <div class='col-md-6 form-group'>
+                    <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars'>
+                    <div class='validate'></div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button>
+                </div>
+            </form>
           </div>
         </div>
-
-        <div class='col-lg-6'>
-          <form action='forms/contact.php' method='post' role='form' class='php-email-form'>
-            <div class='form-row'>
-              <div class='col-md-6 form-group'>
-                <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars'>
-                <div class='validate'></div>
-              </div>
-              <div class="col-md-6 form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="6" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validate"></div>
-            </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
       </div>
     </section>
 
@@ -493,7 +508,7 @@
     <!-- === Footer === -->
 
   <footer>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
@@ -502,9 +517,15 @@
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="topPage"></div>
+  </footer>
+
+
+  
 
   <!-- Vendor JS Files -->
+
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -515,18 +536,18 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
 
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 
  <!--
-    -- jQuery JavaScript --
-    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+    -- jQuery JavaScript -- 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     -- Bootsrtap Javascript --
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  -->
 
+ -->
 
   </body>
 
