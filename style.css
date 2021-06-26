@@ -13,6 +13,10 @@ h6 {
   color: #1e1e1e;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   color: #1e1e1e;
   transition: all 0.5s ease-in-out;
@@ -55,7 +59,7 @@ p li {
   color: #4e4e4e;
 }
 
-.box-shadow, .paralax-mf, .service-box, .work-box, .card-blog {
+.box-shadow, .service-box {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,41 +67,11 @@ p li {
   box-shadow: 0 0 0 4px #cde1f8;
 }
 
-.display-5 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.display-6 {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.1;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
-}
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
 
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
   }
-}
-
-.paralax-mf {
-  position: relative;
-  padding: 8rem 0;
 }
 
 .display-table {
@@ -145,6 +119,37 @@ p li {
 
 /* == Navbar == */
 
+
+@media (min-width: 768px) {
+  #collapseMenu {
+    display: none !important;
+  }
+}
+#navbarIcon {
+  color: rgb(216, 112, 147) !important;
+}
+
+#collapseMenu {
+  color:whitesmoke;
+  transition: 0.2s;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:10px;
+  background-color: white;
+}
+
+#langDropdown {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 
 .portfolioName {
   font-size: 18px;
@@ -407,11 +412,28 @@ p li {
   color: rgba(216, 112, 147, 0.377);
 }
 
+/* === Portfolio === */
+
+.btn-portfolio {
+  background: palevioletred;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.btn-portfolio:hover {
+  background: rgb(167, 177, 110);
+}
+
+
+
 
 /* === Testimonials === */
 
 .testimonials {
-  padding: 80px 0;
+  padding-bottom: 80px;
   background-color: rgba(245, 203, 190, 0.300);
   background-size: cover;
   position: relative;
@@ -504,17 +526,9 @@ p li {
   padding: 20px 0 30px 0;
 }
 
-.contact .info-box i.bx {
-  font-size: 24px;
-  color: #ffb727;
-  border-radius: 50%;
-  padding: 15px;
-  background: #fff6e4;
-}
-
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: rgb(75, 110, 87);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -546,8 +560,8 @@ p li {
 
 .contact .social-links a:hover {
   color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
+  border-color: palevioletred;
+  background: palevioletred;
 }
 
 .contact .php-email-form {
@@ -611,9 +625,6 @@ p li {
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  background-color: #ffb727;
-}
 
 .contact .php-email-form input {
   padding: 20px 15px;
@@ -624,7 +635,7 @@ p li {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffb727;
+  background: palevioletred;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -633,7 +644,7 @@ p li {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #ffc85a;
+  background: rgb(167, 177, 110);
 }
 
 @-webkit-keyframes animate-loading {
@@ -655,3 +666,16 @@ p li {
 }
 
 /* === Footer === */
+
+footer {
+  text-align: center;
+  color: rgb(48, 48, 48);
+  padding: 25px 0;
+  background: #ffffff;
+  font-family:'Raleway', sans-serif;
+}
+
+footer .copyright {
+  margin-bottom: .3rem;
+}
+
