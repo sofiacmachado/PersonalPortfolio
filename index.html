@@ -1,26 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel ="stylesheet" type="text/css" href="./style.css">
+  
+    
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 
     <title> Sofia Carneiro Machado's Portfolio</title>
+    
   </head>
 
   <body>
-    
 
-    <!-- jQuery JavaScript -->
+    <!-- ===== Header / Navbar ===== -->
+    <header id='topPage'>  
+        <div class='container '>
+      <nav id='navbar' class='mainNav navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
+        <div class='container'>
+          <a class='portfolioName navbar-brand active' href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
+          <button class='navbar-toggler collapsed' type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
+          </button>
+          <div id='navbarMenu' class='navbarMenu navbar-collapse collapse justify-content-end'>
+             <ul class='navbar-nav'>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#about'>About</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#resume'>Resume</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#portfolio'>Portfolio</a>
+                </li>
+                <li class='nav-item dropdown'>
+                  <a id='navbarDropdown' class='nav-link dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                    <span>Services</span><i class='ml-2 fas fa-chevron-down'></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Photography</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Video Editing</a>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Web Development</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdownMenu dropdown-item" href="#portfolio">Bookselling</a>
+                  </div>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#contact'>Contact</a>
+                </li>
+             </ul>
+           </div>
+        </div>
+
+        <!-- Dropdown Menu -->
+
+        <button class='navbar-toggler navbar-brand py-0 pr-0 pl-0 border-0 position-relative collapsed ' role='button' data-toggle='collapse' data-target='#collapseMenu' aria-controls='collapseMenu' aria-expanded='false' aria-label='Toggle navigation'>
+          <i id='navbarIcon' class="fas fa-align-justify"></i>
+        </button>
+        <div class='collapse navbar-collapse pb-6 font-weight-light bg-white position-relative' id ='collapseMenu'>
+          <form class= >
+            <div class ='form-group mb-4'>
+
+              <ul class='navbar-nav pt-4'>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#about'>About</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#resume'>Resume</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#portfolio'>Portfolio</a>
+                </li>
+                <label for="exampleFormControlSelect1"></label>
+              <select class="form-control mb-2" id="langDropdown">
+                <option>Photography</option>
+                <option>Video Editing</option>
+                <option>Web Development</option>
+                <option>Bookselling</option>
+              </select>
+                <li class='nav-item'>
+                  <a class='nav-link' href='#contact'>Contact</a>
+                </li>
+              </ul></div>
+            </div>
+          </form>
+        </div>
+              
+
+      </nav>
+    </header>
+
+    <!-- ==== Hero Section ==== -->
+
+    <div class='intro route bg-image' id='home' style='background-image: url(./assets/images/hero_background.jpg)'>
+    <div class='intro-content display-table'>
+      <div class='table-cell'>
+        <div class='container'>
+          <p class='intro-subtitle mb-4'><span class='text-slider-items'>Bookseller,Photographer,Videographer,Frontend Developer</span><strong class='text-slider'></strong></p>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+
+      <!-- ==== About Me ==== -->
+          
+          <section id='about' class='about-mf sect-pt4 route'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='box-shadow-full'>
+                    <div class='row'>
+                      <div class='col-md-6'>
+                        <div class='row'>
+                          <div class='col-sm-6 col-md-5'>
+                            <div class='about-img'>
+                              <img src='assets/images/DSC_0170 (2).jpg' class='img-fluid rounded b-shadow-a' alt="Sofia's photo">
+                            </div>
+                          </div>
+                          <div class='col-sm-6 col-md-7'>
+                            <div class='about-info'>
+                              <p><span class='title-s'>Name: </span> <span class='info'>Sofia Carneiro Machado</span></p>
+                              <p><span class="title-s">City: </span> <span class='info'>Braga</span></p>
+                              <p><span class="title-s">Email: </span> <span class='info'>contact@example.com</span></p>
+                              <p><span class="title-s">Phone: </span> <span class='info'>*** *** ***</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='skill-mf'>
+                          <p class='title-s'>Skills</p>
+                          <span class='skills'>HTML</span> <span class='pull-right'></span>
+                          <div class='progress'>
+                            <div class='progress-bar' role='progressbar' style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemin='100'></div>
+                          </div>
+                          <span class='skills'>CSS</span> <span class='pull-right'></span>
+                          <div class='progress'>
+                          <div class='progress-bar' role='progressbar' style='width: 65%;' aria-value-now='65' aria-valuemin='0' aria-valuemax="100"></div>
+                        </div>
+                        <span class='skills'>JavaScript</span> <span class='pull-right'></span>
+                        <div class='progress'>
+                          <div class='progress-bar' role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax="100"></div>
+                        </div>
+                        <span class='skills'>Adobe Photoshop</span> <span class='pull-right'></span>
+                        <div class='progress'>
+                          <div class='progress-bar' role='progressbar' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax="100"></div> 
+                       </div>
+                       <span class='skills'>Adobe Lightroom</span> <span class='pull-right'></span>
+                      <div class='progress'>
+                        <div class='progress-bar' role='progressbar' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax="100"></div>
+                      </div>
+                      <span class='skills'>Adobe Premier</span> <span class='pull-right'></span>
+                      <div class='progress'>
+                        <div class='progress-bar' role='progressbar' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax="100"></div>
+                      </div>
+                      <span class='skills'>Adobe InDesign</span> <span class='pull-right'></span>
+                      <div class='progress'>
+                        <div class='progress-bar' role='progressbar' style='width: 70%' aria-valuenow='70' aria-valuemin='0' aria-valuemax="100"></div>
+                      </div>
+                      <span class='skills'>Adobe Illustrator</span> <span class='pull-right'></span>
+                      <div class='progress'>
+                        <div class='progress-bar' role='progressbar' style='width: 60%' aria-valuenow='60' aria-valuemin='0' aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-md-6'>
+                    <div class='about-me pt-4 pt-md-0'>
+                      <div class='title-box-2'>
+                        <h2 class='title-a'>
+                          About me
+                        </h2>
+                      </div>
+                      <p class='lead'>
+                        I'm Sofia Machado, born in 1992 I grew up in Braga.
+                        I have graduated in Science Communications in the University of Minho.</p>
+                      <p class='lead'>
+                        Since I finished my studies that I have been working on Fnac Braga as a Bookseller. Besides my day job, I did some work as a photographer and video editor for weddings and baptisms.</p>
+                      <p class='lead'>
+                        I'm currently studying to become a FrontEnd Developer.</p>
+                       </div>
+                      </div>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <!-- ==== Resume Section ==== -->
+    <section id='resume' class='resume'>
+      <div class='container '>
+        
+        <div class='title-a mb-4 '>
+          <span>Resume</span>
+        </div>
+
+        <div class='row mx-5 mb-5'>
+          <div class='col-lg-6'>
+            <h3 class='resume-title mb-4'>Education</h3>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Degree in Communication Sciences</h4>
+              <h5 class='resume-date'>2010-2013</h5>
+              <p><em>University of Minho</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Masters in Interactive Media</h4>
+              <h5 class='resume-date'>2014-...</h5>
+              <p><em>University of Minho</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Frontend Developer</h4>
+              <h5 class='resume-date'>2021-...</h5>
+              <p><em>Altcademy</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+          </div>
+          <div class='col-lg-6'>
+            <h3 class='resume-title mb-4'>Professional Experience</h3>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Customer Support</h4>
+              <h5 class='resume-date'>2015-2016</h5>
+              <p><em>Fnac Braga</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Bookseller</h4>
+              <h5 class='resume-date'>2016-...</h5>
+              <p><em>Fnac Braga</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Videographer</h4>
+              <h5 class='resume-date'>2016-2017</h5>
+              <p><em>Pitães - Retratos de Sonho</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class='resume-item mb-4'>
+              <h4 class='title-s'>Photographer</h4>
+              <h5 class='resume-date'>sporadic</h5>
+              <p><em>Braga</em></p>
+              <p>
+                <ul>
+                  <li>Wedding Photography</li>
+                  <li>Baptism Photographer</li>
+                  <li>Personal photos</li>
+                </ul>
+                </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- === Services Section === -->
+    <section id='services' class='services'>
+      <div class='container'>
+        <div class='title-a mb-4'>Services</div>
+
+        <div class='row mb-5'>
+          <div class='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'>
+            <div class='icon-box'>
+              <div class='icon'><i class='fas fa-book-reader'></i></div>
+            <h4 class='title-s'><a href=''>Recommend Books</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+        </div>
+        <div class='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'>
+          <div class='icon-box'>
+            <div class='icon'><i class='fas fa-camera'></i></div>
+          <h4 class='title-s'><a href=''>Photography</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+        </div>
+        <div class='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'>
+          <div class='icon-box'>
+            <div class='icon'><i class='fas fa-film'></i></div>
+          <h4 class='title-s'><a href=''>Video Editing</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+        </div>
+        <div class='col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0'>
+          <div class='icon-box'>
+            <div class='icon'><i class='fas fa-code'></i></div>
+          <h4 class='title-s'><a href=''>Web Development</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- === Portfolio Section === -->
+
+      <section id='portfolio' class='portfolio'>
+        <div class='container'>
+          <span class='title-a'>Portfolio</span>
+
+        <!-- Filter Buttons -->
+
+        <div class="row text-center mt-5 mb-5 g-3">
+          <div class="col-md-12">
+            <button class="btn-portfolio" type="button" data-filter='*'>All</button>
+            <button class="btn-portfolio" type="button" data-filter='.filterPhotography'>Photography</button>
+            <button class="btn-portfolio" type="button" data-filter='.filterVideography'>Videography</button>
+            <button class="btn-portfolio" type="button" data-filter='.filterWeb'>Web Development</button>
+          </div>
+        </div>
+
+          <!-- Portfolio Items -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box filterPhotography">
+              <img src="./assets/images/photo1.jpg" alt="portfolio photography work 1" title="portfolio photography work 1" class="img-fluid">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4 class='title-s'>Photography Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Photography</a><em> - 20 March 2018</em></h4>
+                  <a href='#'><i class='fas fa-plus-square'></span></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box filterVideography">
+              <img src="./assets/images/video1.jpg" alt="portfolio video work 1" title="portfolio video work 1" class="img-fluid">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4 class='title-s'>Video Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Videography</a><em> - 20 March 2018</em></h4>
+                  <a href='#'><i class='fas fa-plus-square'></span></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box filterPhotography">
+              <img src="./assets/images/photo2.jpg" alt="portfolio photography work 2" title="portfolio photography work 2" class="img-fluid">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4 class='title-s'>Photography Work 2</h4>
+                  <h4 class='title-s'><a href='#'>Photography</a><em> - 20 March 2018</em></h4>
+                  <a href='#'><i class='fas fa-plus-square'></span></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box filterWeb">
+              <img src="./assets/images/web1.jpg" alt="portfolio web development work" title="portfolio web development work" class="img-fluid">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4 class='title-s'>Web Development Work 1</h4>
+                  <h4 class='title-s'><a href='#'>Web</a><em> - 20 March 2018</em></h4>
+                  <a href='#'><i class='fas fa-plus-square'></span></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box filterVideography">
+              <img src="./assets/images/video2.jpg" alt="portfolio video work 2" title="portfolio video work 2" class="img-fluid">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4 class='title-s'>Video Work 2</h4>
+                  <h4 class='title-s'><a href='#'>Videography</a><em> - 20 March 2018</em></h4>
+                  <a href='#'><i class='fas fa-plus-square'></span></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+       
+      <!-- === Testimonials Section === -->
+
+    <section>
+      
+      <div class='container-fluid mt-5'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180"><path fill="#f5d9d0" fill-opacity="0.75" d="M0,128L48,138.7C96,149,192,171,288,160C384,149,480,107,576,85.3C672,64,768,64,864,74.7C960,85,1056,107,1152,117.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+         <div id='testimonials' class='testimonials carousel slide' data-ride='carousel'>
+          
+           <ol class='carousel-indicators'>
+             <li type='button' data-target='#testimonials' data-slide-to='0' class='active'></li>
+             <li type='button' data-target='#testimonials' data-slide-to='1'></li>
+             <li type='button' data-target='#testimonials' data-slide-to='2'></li>
+           </ol>
+
+           <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                  <img class='testimonial-img' src='./assets/images/testimonials1.jpg' alt='testimonial 1'>
+                  <h3>Mark Banksy</h3>
+                  <h4>Restaurant Owner</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+                <div class='carousel-item'>
+                  <img class='testimonial-img' src='./assets/images/testimonials2.jpg' alt='testimonial 2'>
+                  <h3>Anna Klimt</h3>
+                  <h4>Designer</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+             
+                <div class='carousel-item'>
+                  <img class='testimonial-img' src='./assets/images/testimonials3.jpg' alt='testimonial 3'>
+                  <h3>Phoebe Dali</h3>
+                  <h4>Freelancer</h4>
+                  <p><i class='fas fa-quote-right'></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class='fas fa-quote-left'></i></p>
+                </div>
+            </div>
+             <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+              <span class="sr-only">Previous</span>
+             </a>
+             <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+              <span class="sr-only">Next</span>
+             </a>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180"><path fill="#f5d9d0" fill-opacity="0.75" d="M0,128L48,138.7C96,149,192,171,288,160C384,149,480,107,576,85.3C672,64,768,64,864,74.7C960,85,1056,107,1152,117.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+       </div>
+    </section>
+
+    <!-- === Contact Section === -->
+
+    <section id='contact' id= 'contact' class='contact'>
+      <div class='container mb-5'>
+
+        <div class='section-title mb-2 mt-5'>
+          <span class='title-a'>Contact Me</span>
+        </div>
+        <div class='row'>
+          <div class='col-lg-6'>
+
+            <div class='row'>
+
+              <div class='col-md-12'>
+                <div class='info-box'>
+                  <i class='fas fa-share-alt'></i>
+                  <h3>Social Profiles</h3>
+                  <div class='social-links'>
+                    <a href='#' class='facebook'><i class='fab fa-facebook-f'></i></a>
+                    <a href='#' class='instagram'><i class='fab fa-instagram'></i></a>
+                    <a href='https://github.com/sofiacmachado' target='_blank' class='github'><i class='fab fa-github'></i></a>
+                    <a href='#https://www.linkedin.com/in/sofiacarneiromachado/' target='_blank' class='linkedin'><i class='fab fa-linkedin-in'></i></a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class='col-md-6'>
+                <div class='info-box mt-4'>
+                  <i class='far fa-envelope-open'></i>
+                  <h3>Email Me</h3>
+                  <p>contact@example.com</p>
+                </div>
+              </div>
+
+              <div class='col-md-6'>
+                <div class='info-box mt-4'>
+                  <i class='fas fa-phone-alt'></i>
+                  <h3>Call Me</h3>
+                  <p>+351 *** *** ***</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class='col-lg-6'>
+              <form action='forms/contact.php' method='post' role='form' class='php-email-form'>
+                <div class='form-row'>
+                  <div class='col-md-6 form-group'>
+                    <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars'>
+                    <div class='validate'></div>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    
+    <!-- === Footer === -->
+
+  <footer>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Sofia Carneiro Machado</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="topPage"></div>
+  </footer>
+
+
+  
+
+  <!-- Vendor JS Files -->
+  
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+ <!--
+    -- jQuery JavaScript -- 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- Bootsrtap Javascript -->
+    -- Bootsrtap Javascript --
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+ -->
+
   </body>
 
 </html>
